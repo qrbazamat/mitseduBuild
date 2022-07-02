@@ -1,5 +1,50 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="MITS EDU - Mingbuloq IT School ta'lim platformasi"/><link rel="manifest" href="./manifest.json"/><title>MITS Education</title><script defer="defer" src="./static/js/main.755aff52.js"></script><link href="./static/css/main.baa9566d.css" rel="stylesheet"><style>@media screen and (max-width: 880px) {
-.projects-section{
-        flex: 100 !important;
-}    
-}</style></head><body><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./favicon.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="MITS EDU - Mingbuloq IT School ta'lim platformasi" />
+        <link rel="manifest" href="./manifest.json" />
+        <title>MITS Education</title>
+        <script defer="defer" src="./static/js/main.755aff52.js"></script>
+        <link href="./static/css/main.baa9566d.css" rel="stylesheet">
+        <style>
+                @media screen and (max-width: 880px) {
+                        .projects-section {
+                                flex: 100 !important;
+                        }
+                }
+
+                @media screen and (max-width: 600px) {
+                        .app-sidebar {
+                                position: fixed;
+                                z-index: 990;
+                                left: 0;
+                                bottom: 0;
+                                flex-direction: row !important;
+                                justify-content: space-evenly;
+                                width: 100%;
+                                background-color: var(--project-section-blur-bg);
+                                backdrop-filter: blur(12px);
+                                padding: 5px 0px;
+                        }
+
+                        .app-sidebar-link.logout {
+                                position: static;
+                        }
+
+                        .projects-section {
+                                transform: translateX(18px);
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <div id="root"></div>
+</body>
+
+</html>
